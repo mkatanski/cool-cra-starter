@@ -21,8 +21,16 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test --all --watchAll=false",
+    "test:cover": "react-scripts test --all --watchAll=false --coverage",
+    "test:watch": "react-scripts test --all --watchAll",
+    "test:watch:cover": "react-scripts test --all --watchAll --coverage",
+    "eject": "react-scripts eject",
+    "reinstall": "rm -rf node_modules && yarn install --frozen-lockfile",
+    "reinstall:cache": "rm -rf node_modules && yarn cache clean && yarn install --frozen-lockfile",
+    "pretty": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "lint": "eslint --config ./.eslintrc --format table 'src/**/*.{ts,tsx}' && tsc --noEmit",
+    "open:cover": "open coverage/lcov-report/index.html"
   },
   "eslintConfig": {
     "extends": "react-app"
