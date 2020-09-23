@@ -3,22 +3,22 @@ import { palette } from "styles/palette";
 
 export const MainContainerTheme: StyledTheme = {
   container: {
-    background: palette.outerSpace,
+    background: palette.ebonyClay,
     text: {
-      primary: palette.beautyBush,
-      inverse: palette.holly,
-      secondary: palette.opium,
+      primary: palette.athensGray,
+      inverse: palette.manatee,
+      secondary: palette.manatee,
     },
   },
 
   button: {
     text: {
-      default: palette.beautyBush,
-      hover: palette.holly,
+      default: palette.manatee,
+      hover: palette.athensGray,
     },
     background: {
-      default: palette.holly,
-      hover: palette.opium,
+      default: palette.charade,
+      hover: palette.heliotrope,
     },
   },
 

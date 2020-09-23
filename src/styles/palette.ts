@@ -10,4 +10,10 @@ export const palette = {
   wewak: "#F2A7A0",
   opium: "#8C6B68",
   beautyBush: "#F2C4C4",
+
+  heliotrope: "#a67dff",
+  ebonyClay: "#222431",
+  manatee: "#9799a4",
+  athensGray: "#f6f5f8",
+  charade: "#2b2d3d",
 };
