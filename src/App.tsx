@@ -1,25 +1,18 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import { MainStyle } from "styles/global";
+import { ThemeProvider } from "components/theme/ThemeProvider";
+import { ThemedContainer } from "components/theme/ThemedContainer";
+import { MainContainerTheme as LightTheme } from "styles/themes/light";
+import { MainContainerTheme as DarkTheme } from "styles/themes/dark";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider>
+      <ThemedContainer themes={{ light: LightTheme, dark: DarkTheme }}>
+        <MainStyle />
+        <div className="App">Test</div>
+      </ThemedContainer>
+    </ThemeProvider>
   );
 }
 
