@@ -14,11 +14,11 @@ export const MainContainerTheme: StyledTheme = {
   button: {
     text: {
       default: palette.holly,
-      hover: palette.outerSpace,
+      hover: palette.concrete,
     },
     background: {
       default: palette.azalea,
-      hover: palette.charm,
+      hover: palette.cranberry,
     },
   },
 

@@ -5,6 +5,7 @@
 import "@testing-library/jest-dom/extend-expect";
 import "whatwg-fetch";
 import "mutationobserver-shim";
+import "jest-styled-components";
 
 import { configure } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
