@@ -6,9 +6,9 @@ import { MainContainerTheme } from "./main";
 export const TopBarContainerTheme: StyledTheme = {
   ...MainContainerTheme,
   container: {
-    background: palette.cranberry,
+    background: palette.holly,
     text: {
-      primary: palette.wewak,
+      primary: palette.beautyBush,
     },
   },
 };
