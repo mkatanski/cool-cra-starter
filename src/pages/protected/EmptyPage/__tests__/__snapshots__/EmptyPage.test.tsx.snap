@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages protected EmptyPage should render EmptyPage component 1`] = `
+<div
+  data-props={
+    Object {
+      "category": "category",
+      "title": "Empty page",
+    }
+  }
+  id="PageTitle"
+/>
+`;

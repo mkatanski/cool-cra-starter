@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`routes AuthenticatedRoute should render AuthenticatedRoute component with default context 1`] = `
+<div
+  id="ReactRouter.Redirect"
+  push={true}
+  to="/login"
+/>
+`;
+
+exports[`routes AuthenticatedRoute should render AuthenticatedRoute component with user context 1`] = `
+<div
+  id="ReactRouter.Route"
+>
+  <div>
+    TestComponent
+  </div>
+</div>
+`;

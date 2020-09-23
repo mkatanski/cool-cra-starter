@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`routes UnauthenticatedRoute should render UnauthenticatedRoute component with default context 1`] = `
+<div
+  id="ReactRouter.Route"
+>
+  <div>
+    TestComponent
+  </div>
+</div>
+`;
+
+exports[`routes UnauthenticatedRoute should render redirect to dashboard if user is authenticated 1`] = `
+<div
+  id="ReactRouter.Redirect"
+  push={true}
+  to="/dashboard"
+/>
+`;

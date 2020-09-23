@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`layouts PublicLayout should render PublicLayout component 1`] = `
+Array [
+  .c0 {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 6px 18px 10px 6px;
+}
+
+<aside
+    className="c0"
+  >
+    <button
+      id="LangSwitcherButton"
+      isActive={false}
+      label="English"
+      value="en"
+    />
+    <button
+      id="LangSwitcherButton"
+      isActive={false}
+      label="Français"
+      value="fr"
+    />
+  </aside>,
+  <div
+    id="LayoutBase"
+  />,
+]
+`;
+
+exports[`layouts PublicLayout should render PublicLayout with children 1`] = `
+Array [
+  .c0 {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 6px 18px 10px 6px;
+}
+
+<aside
+    className="c0"
+  >
+    <button
+      id="LangSwitcherButton"
+      isActive={false}
+      label="English"
+      value="en"
+    />
+    <button
+      id="LangSwitcherButton"
+      isActive={false}
+      label="Français"
+      value="fr"
+    />
+  </aside>,
+  <div
+    id="LayoutBase"
+  >
+    Some children
+  </div>,
+]
+`;
