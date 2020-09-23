@@ -1,0 +1,6 @@
+{
+  "blueprint.templatesPath": [
+    "./.blueprints"
+  ],
+  "typescript.tsdk": "/Users/mkatanski/Projects/cool-cra-starter/node_modules/typescript/lib"
+}
