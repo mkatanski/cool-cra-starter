@@ -1,6 +1,6 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import "jest-styled-components";
+
 
 import {{pascalCase name}} from "../{{pascalCase name}}";
 

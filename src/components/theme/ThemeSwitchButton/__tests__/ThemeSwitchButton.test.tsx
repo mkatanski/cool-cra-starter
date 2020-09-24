@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import TestRenderer from "react-test-renderer";
-import "jest-styled-components";
 
 import { ThemeSwitchButton } from "../ThemeSwitchButton";
 import { withThemeProvider } from "__tests-helpers__/withThemeProvider";
