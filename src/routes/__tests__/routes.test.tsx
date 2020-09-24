@@ -41,27 +41,9 @@ jest.mock(
 );
 
 jest.mock(
-  "pages/protected/ProductsListPage",
-  () => ({ children, ...rest }: React.PropsWithChildren<{}>) => (
-    <div id="ProductsListPage" {...rest}>
-      {children}
-    </div>
-  )
-);
-
-jest.mock(
   "pages/protected/HomePage",
   () => ({ children, ...rest }: React.PropsWithChildren<{}>) => (
     <div id="HomePage" {...rest}>
-      {children}
-    </div>
-  )
-);
-
-jest.mock(
-  "pages/protected/ProductItemPage",
-  () => ({ children, ...rest }: React.PropsWithChildren<{}>) => (
-    <div id="ProductItemPage" {...rest}>
       {children}
     </div>
   )
@@ -77,63 +59,9 @@ jest.mock(
 );
 
 jest.mock(
-  "pages/protected/PriceFunctionsListPage",
-  () => ({ children, ...rest }: React.PropsWithChildren<{}>) => (
-    <div id="PriceFunctionsListPage" {...rest}>
-      {children}
-    </div>
-  )
-);
-
-jest.mock(
-  "pages/protected/StoresListPage",
-  () => ({ children, ...rest }: React.PropsWithChildren<{}>) => (
-    <div id="StoresListPage" {...rest}>
-      {children}
-    </div>
-  )
-);
-
-jest.mock(
-  "pages/protected/StoreItemPage",
-  () => ({ children, ...rest }: React.PropsWithChildren<{}>) => (
-    <div id="StoreItemPage" {...rest}>
-      {children}
-    </div>
-  )
-);
-
-jest.mock(
-  "pages/protected/ProductRecommendationsListPage",
-  () => ({ children, ...rest }: React.PropsWithChildren<{}>) => (
-    <div id="ProductRecommendationsListPage" {...rest}>
-      {children}
-    </div>
-  )
-);
-
-jest.mock(
-  "pages/protected/ProductRecommendationsItemPage",
-  () => ({ children, ...rest }: React.PropsWithChildren<{}>) => (
-    <div id="ProductRecommendationsItemPage" {...rest}>
-      {children}
-    </div>
-  )
-);
-
-jest.mock(
   "pages/public/LoginPage",
   () => ({ children, ...rest }: React.PropsWithChildren<{}>) => (
     <div id="LoginPage" {...rest}>
-      {children}
-    </div>
-  )
-);
-
-jest.mock(
-  "pages/public/CreatePasswordPage",
-  () => ({ children, ...rest }: React.PropsWithChildren<{}>) => (
-    <div id="CreatePasswordPage" {...rest}>
       {children}
     </div>
   )

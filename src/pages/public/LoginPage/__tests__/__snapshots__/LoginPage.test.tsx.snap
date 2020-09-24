@@ -1,129 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`pages public LoginPage should render LoginPage component 1`] = `
-<span
-  id="SwipeableColumns"
->
-  <span
-    id="LeftColumn"
-  >
-    Forgot Password
-  </span>
-  <span
-    id="RightColumn"
-  >
-    <div
-      id="LoginForm"
-      onClick={[Function]}
-    />
-  </span>
-</span>
-`;
-
-exports[`pages public LoginPage should render LoginPage should render active left column 1`] = `
-<LoginPage>
-  <SwipeableColumns
-    isActive={true}
-  >
-    <span
-      id="SwipeableColumns"
-    >
-      <Redirect
-        to="/dashboard"
-      >
-        <div
-          id="ReactRouter.Redirect"
-          to="/dashboard"
-        />
-      </Redirect>
-      <Component>
-        <span
-          id="LeftColumn"
-        >
-          Forgot Password
-        </span>
-      </Component>
-      <Component>
-        <span
-          id="RightColumn"
-        >
-          <LoginForm
-            onClickForgotPassword={[Function]}
-          >
-            <div
-              id="LoginForm"
-              onClick={[Function]}
-            />
-          </LoginForm>
-        </span>
-      </Component>
-    </span>
-  </SwipeableColumns>
-</LoginPage>
-`;
-
-exports[`pages public LoginPage should render LoginPage should render active right column 1`] = `
-<LoginPage>
-  <SwipeableColumns
-    isActive={false}
-  >
-    <span
-      id="SwipeableColumns"
-    >
-      <Redirect
-        to="/dashboard"
-      >
-        <div
-          id="ReactRouter.Redirect"
-          to="/dashboard"
-        />
-      </Redirect>
-      <Component>
-        <span
-          id="LeftColumn"
-        >
-          Forgot Password
-        </span>
-      </Component>
-      <Component>
-        <span
-          id="RightColumn"
-        >
-          <LoginForm
-            onClickForgotPassword={[Function]}
-          >
-            <div
-              id="LoginForm"
-              onClick={[Function]}
-            />
-          </LoginForm>
-        </span>
-      </Component>
-    </span>
-  </SwipeableColumns>
-</LoginPage>
+<div>
+  Login form is coming
+</div>
 `;
 
 exports[`pages public LoginPage should render Redirect component 1`] = `
-<span
-  id="SwipeableColumns"
->
-  <div
-    id="ReactRouter.Redirect"
-    to="/dashboard"
-  />
-  <span
-    id="LeftColumn"
-  >
-    Forgot Password
-  </span>
-  <span
-    id="RightColumn"
-  >
-    <div
-      id="LoginForm"
-      onClick={[Function]}
-    />
-  </span>
-</span>
+<div>
+  Login form is coming
+</div>
 `;

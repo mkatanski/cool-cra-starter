@@ -4,10 +4,6 @@ import TestRenderer from "react-test-renderer";
 
 import DefaultLayout from "../DefaultLayout";
 
-jest.mock("react-router-dom", () => ({
-  useLocation: () => ({ pathname: "testPath" }),
-}));
-
 jest.mock(
   "layouts/LayoutBase",
   () => ({ children, ...rest }: React.PropsWithChildren<{}>) => (
@@ -17,9 +13,24 @@ jest.mock(
   )
 );
 
-jest.mock("components/TopBar", () => ({
-  TopBar: ({ children }: React.PropsWithChildren<{}>) => (
+jest.mock("components/TopBar", () => {
+  const TopBar = ({ children }: React.PropsWithChildren<{}>) => (
     <div id="TopBar">{children}</div>
+  );
+  TopBar.Container = ({ children }: React.PropsWithChildren<{}>) => (
+    <div id="TopBar.Container">{children}</div>
+  );
+
+  return {
+    TopBar,
+  };
+});
+
+jest.mock("components/LinkButton", () => ({
+  LinkButton: ({ children, ...rest }: React.PropsWithChildren<{}>) => (
+    <div id="LinkButton" {...rest}>
+      {children}
+    </div>
   ),
 }));
 

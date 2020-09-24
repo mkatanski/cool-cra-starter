@@ -6,7 +6,6 @@ import LayoutBase, { LayoutBaseProps } from "layouts/LayoutBase";
 import { LinkButton } from "components/LinkButton";
 import { TopBar } from "components/TopBar";
 import { paths } from "config/paths";
-import { ThemeSwitchButton } from "components/theme/ThemeSwitchButton";
 
 const PageContent = styled.div`
   padding: 20px;
@@ -35,7 +34,7 @@ const DefaultLayout: React.FC<LayoutBaseProps> = ({
         </Link>
       </TopBar.Container>
       <TopBar.Container alignRight>
-        <ThemeSwitchButton />
+        <LinkButton>Switch Theme</LinkButton>
       </TopBar.Container>
     </TopBar>
     <PageContent>

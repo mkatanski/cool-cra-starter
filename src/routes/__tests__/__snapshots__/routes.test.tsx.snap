@@ -9,38 +9,21 @@ exports[`routes should render routes schema 1`] = `
     path={
       Array [
         "/login",
-        "/:realm/login",
-        "/createPassword",
-        "/:realm/createPassword",
       ]
     }
   >
     <div
+      allowAuthenticated={true}
       exact={true}
       id="UnauthenticatedRoute"
       path={
         Array [
           "/login",
-          "/:realm/login",
         ]
       }
     >
       <div
         id="LoginPage"
-      />
-    </div>
-    <div
-      exact={true}
-      id="UnauthenticatedRoute"
-      path={
-        Array [
-          "/createPassword",
-          "/:realm/createPassword",
-        ]
-      }
-    >
-      <div
-        id="CreatePasswordPage"
       />
     </div>
   </div>
@@ -70,64 +53,19 @@ exports[`routes should render routes schema 1`] = `
     <div
       exact={true}
       id="AuthenticatedRoute"
-      path="/products"
+      path="/empty"
     >
       <div
-        id="ProductsListPage"
+        id="EmptyPage"
       />
     </div>
     <div
       exact={true}
       id="AuthenticatedRoute"
-      path="/products/:id"
+      path="/empty"
     >
       <div
-        id="ProductItemPage"
-      />
-    </div>
-    <div
-      exact={true}
-      id="AuthenticatedRoute"
-      path="/price-functions"
-    >
-      <div
-        id="PriceFunctionsListPage"
-      />
-    </div>
-    <div
-      exact={true}
-      id="AuthenticatedRoute"
-      path="/stores"
-    >
-      <div
-        id="StoresListPage"
-      />
-    </div>
-    <div
-      exact={true}
-      id="AuthenticatedRoute"
-      path="/stores/:id"
-    >
-      <div
-        id="StoreItemPage"
-      />
-    </div>
-    <div
-      exact={true}
-      id="AuthenticatedRoute"
-      path="/productRecommendations"
-    >
-      <div
-        id="ProductRecommendationsListPage"
-      />
-    </div>
-    <div
-      exact={true}
-      id="AuthenticatedRoute"
-      path="/productRecommendations/:id"
-    >
-      <div
-        id="ProductRecommendationsItemPage"
+        id="EmptyPage"
       />
     </div>
     <div

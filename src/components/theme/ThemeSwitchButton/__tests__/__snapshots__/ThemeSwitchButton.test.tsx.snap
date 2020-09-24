@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components ThemeSwitchButton should render ThemeSwitchButton component 1`] = `
+.c0 {
+  background: palette.azalea;
+  color: palette.holly;
+  cursor: pointer;
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.c0:hover {
+  background: palette.charm;
+  color: palette.outerSpace;
+}
+
+<a
+  className="c0"
+  data-testid="ThemeToggleButton"
+  onClick={[Function]}
+>
+  <span
+    data-props={
+      Object {
+        "icon": "adjust",
+      }
+    }
+    id="FontAwesomeIcon"
+  />
+</a>
+`;

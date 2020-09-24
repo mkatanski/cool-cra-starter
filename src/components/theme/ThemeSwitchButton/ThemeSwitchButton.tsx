@@ -18,7 +18,7 @@ export const ThemeSwitchButton: React.FC<ThemeSwitchButtonProps> = () => {
   };
 
   return (
-    <LinkButton onClick={handleClick}>
+    <LinkButton data-testid="ThemeToggleButton" onClick={handleClick}>
       <FontAwesomeIcon icon="adjust" />
     </LinkButton>
   );

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components LinkButton should render LinkButton component 1`] = `
+.c0 {
+  background: palette.azalea;
+  color: palette.holly;
+  cursor: pointer;
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.c0:hover {
+  background: palette.charm;
+  color: palette.outerSpace;
+}
+
+<a
+  className="c0"
+/>
+`;
