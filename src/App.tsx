@@ -6,7 +6,11 @@ import { ThemedContainer } from "components/theme/ThemedContainer";
 import { MainContainerTheme as LightTheme } from "styles/themes/light";
 import { MainContainerTheme as DarkTheme } from "styles/themes/dark";
 import { LoadingScreen } from "components/fallbacks/LoadingScreen";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
 import Routes from "routes";
+
+library.add(fas);
 
 function App() {
   return (
