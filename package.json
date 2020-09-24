@@ -43,7 +43,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged --bail --no-restage && yarn run lint",
-      "pre-push": "yarn run lint && yarn run test:cover && yarn run coverage"
+      "pre-push": "yarn run lint && yarn run test:cover"
     }
   },
   "browserslist": {
