@@ -6,6 +6,6 @@ export type UserState = {
 };
 
 export const defaultState: UserState = {
-  isLoggedIn: true,
+  isLoggedIn: false,
   username: "",
 };
