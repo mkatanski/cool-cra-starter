@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+> please use Yarn instead of npm. if you don't have yarn, please install it `npm i -g yarn`
+
+The application should be running on your [https://localhost:3000](https://localhost:3000)
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -14,8 +18,37 @@ You will also see any lint errors in the console.
 
 ### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
+Run all tests without coverage checking.
+
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `yarn test:watch`
+
+Launches the test runner in interactive mode. It will watch for changes in files and relaunch tests on each change.
+
+### `yarn test:cover`
+
+Run all tests with coverage raport generated to `/coverage/` folder.
+You can run
+
+```bash
+open coverage/lcov-report/index.html
+```
+
+to see coverage in default browser.
+
+### `yarn test:watch:cover`
+
+It launches the test runner in interactive mode and with coverage reporting.
+
+Run all tests with coverage raport generated to `/coverage/` folder.
+You can run
+
+```bash
+open coverage/lcov-report/index.html
+```
+
+to see coverage in default browser.
 
 ### `yarn build`
 
@@ -27,18 +60,18 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+### `yarn reinstall`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Remove all node modules from project folder and reinstall them. It will also preserve modules versions and will not modify _yarn.lock_ file.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `yarn reinstall:cache`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Same as `yarn reinstall` but it also cleans yarn cache.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### `yarn pretty`
 
-## Learn More
+It will run prettier on all project files. Please note that prettier will be run before each commit. Prettier will unstage all files that has been formatted and stop commiting so You can check what changes was applied before commit.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### `yarn lint`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Project use [eslint](https://eslint.org/) to check code style consistency and/or fix problems with TypeScript code. You can run `yarn lint` to manually perform linting, however it is recommended to use code editor like [VSCode](https://code.visualstudio.com/) to lint all files in real time.
